@@ -1,6 +1,6 @@
-/*Hoja de estilos -- Destino Cordillera*/
+/* Hoja de estilos -- Destino Cordillera */
 
-/*Paleta de colores*/
+/* Paleta de colores */
 :root {
     --verde-bosque: #2E7D32;
     --verde-natural: #43A047;
@@ -10,7 +10,7 @@
     --blanco: #FFFFFF;
 }
 
-/*Configuracion General*/
+/* Configuración general */
 body {
     font-family: Arial, sans-serif;
     color: var(--verde-oscuro);
@@ -18,10 +18,11 @@ body {
     margin: 0;
 }
 
-/*Barra de navegacion*/
+/* Barra de navegación */
 .navbar-destino {
     background-color: var(--verde-bosque);
 }
+
 .navbar-destino .navbar-brand {
     color: var(--blanco);
 }
@@ -29,27 +30,53 @@ body {
 .navbar-destino .nav-link {
     color: var(--blanco);
 }
-.navbar-destino .nav-link {
+
+.navbar-destino .nav-link:hover {
     color: var(--verde-claro);
 }
 
-/*Seccion principal*/
-.hero-destino {
-    background-color: var(--verde-claro);
-    padding: 100px 20px;
+/* Carrusel principal */
+.carrusel-destino {
+    position: relative;
 }
-.hero-destino h1 {
-    color: var(--verde-oscuro);
+
+.carrusel-destino img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Texto sobre el carrusel */
+.carrusel-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--blanco);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+}
+
+.carrusel-texto h1 {
     font-size: 3rem;
     font-weight: bold;
+    margin-bottom: 15px;
 }
-.hero-destino p {
+
+.carrusel-texto p {
     max-width: 700px;
-    margin: 20px auto;
+    margin: 0;
     font-size: 1.2rem;
 }
 
-/*Botones*/
+/* Botones */
 .btn-destino {
     background-color: var(--verde-bosque);
     color: var(--blanco);
@@ -57,30 +84,32 @@ body {
     padding: 10px 22px;
     border-radius: 8px;
 }
-.btn-destino {
+
+.btn-destino:hover {
     background-color: var(--verde-natural);
     color: var(--blanco);
 }
 
-/*Presentacion*/
+/* Presentación */
 .presentacion-destino {
     background-color: var(--blanco);
 }
+
+.presentacion-destino h1,
 .presentacion-destino h2 {
     color: var(--verde-bosque);
 }
-.accesos-destino h2 {
+
+/* Accesos principales */
+.acceso-destino {
+    background-color: var(--verde-fondo);
+}
+
+.acceso-destino h2 {
     color: var(--verde-bosque);
 }
 
-/*Imagen(es)*/
-.carrusel-destino img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-/*Tarjetas*/
+/* Tarjetas */
 .card-destino {
     background-color: var(--blanco);
     border-radius: 15px;
@@ -89,31 +118,33 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .card-destino h3 {
     color: var(--verde-bosque);
     margin-bottom: 15px;
 }
+
 .card-destino .btn {
     margin-top: auto;
     align-self: flex-start;
 }
 
-/*Pie de pagina*/
+/* Pie de página */
 .footer-destino {
     background-color: var(--verde-oscuro);
     color: var(--blanco);
     padding: 25px 0;
 }
 
-/*CSS agregado para panoramas*/
-   .panorama-item {
+/* Panoramas */
+.panorama-item {
     background-color: var(--blanco);
     padding-bottom: 30px;
     border-bottom: 1px solid #ddd;
 }
 
 .panorama-item:last-child {
-    border-bottom: none; /* Quita la línea separadora al último panorama */
+    border-bottom: none;
 }
 
 .panorama-titulo {
@@ -127,7 +158,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     object-fit: cover;
     width: 100%;
-    height: 350px; /* Obliga a que todas las imágenes tengan el mismo tamaño */
+    height: 350px;
 }
 
 .panorama-precio {
