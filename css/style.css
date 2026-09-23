@@ -140,3 +140,38 @@ body {
     font-size: 1.1rem;
     margin-top: 10px;
 }
+/*CSS agregado para panoramas*/
+.panorama-item {
+    background-color: var(--blanco);
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.panorama-item:last-child {
+    border-bottom: none; /* Quita la línea separadora al último panorama */
+}
+
+.panorama-titulo {
+    color: var(--verde-bosque);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.panorama-img {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    width: 100%;
+    height: 350px; /* Obliga a que todas las imágenes tengan el mismo tamaño */
+}
+
+.panorama-precio {
+    display: inline-block;
+    background-color: var(--verde-fondo);
+    color: var(--verde-oscuro);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--verde-natural);
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
