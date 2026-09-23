@@ -8,7 +8,7 @@ Proyecto desarrollado para la evaluación práctica Solemne 01 de la asignatura 
 
 * **Joaquín Orellana Barrios**
 * **Samuel López Aguilera**
-* **Nikolas Adasme Pérez**
+* **Nikolas Adasme Perez**
 
 ---
 
