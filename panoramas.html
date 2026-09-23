@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panoramas - Destino Cordillera</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Barra de navegación (Idéntica al index) -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-destino">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Destino Cordillera</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Aquí cambiamos la clase "active" para que marque la página actual -->
+                        <a class="nav-link active" href="panoramas.html">Panoramas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alojamiento.html">Alojamiento y Gastronomía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reserva y Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Contenido principal -->
+<main>
+    <!-- Encabezado de la página -->
+    <section class="presentacion-destino py-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold mb-3" style="color: var(--verde-bosque);">Nuestros Panoramas</h1>
+            <p class="lead">Descubre las mejores actividades y excursiones que Destino Cordillera tiene para ofrecer. Aventura, descanso y naturaleza en un solo lugar.</p>
+        </div>
+    </section>
+
+    <!-- Lista de Panoramas (Efecto Intercalado) -->
+    <section class="container py-5">
+
+        <!-- Panorama 1 (Texto Izquierda, Imagen Derecha) -->
+        <article class="row align-items-center mb-5 panorama-item">
+            <div class="col-md-6">
+                <h2 class="panorama-titulo">Trekking Mirador del Cóndor</h2>
+                <p>Desconéctate de la rutina y respira aire puro en las alturas de la cordillera. Recorreremos un sendero de dificultad media rodeado de bosque nativo hasta llegar a la cima, donde podrás observar el majestuoso vuelo del cóndor andino en su hábitat natural.</p>
+                <div class="panorama-precio">
+                    <strong>Valor referencial:</strong> $15.000 CLP
+                </div>
+                <br>
+                <a href="reserva.html" class="btn btn-destino">Reservar panorama</a>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <img src="imagen/imagen-panorama1.jpg" alt="Trekking Mirador del Cóndor" class="img-fluid panorama-img">
+            </div>
+        </article>
+
+        <!-- Panorama 2 (Imagen Izquierda, Texto Derecha) -->
+        <!-- Usamos order-md-2 y order-md-1 para invertir las columnas en PC -->
+        <article class="row align-items-center mb-5 panorama-item">
+            <div class="col-md-6 order-md-2">
+                <h2 class="panorama-titulo">Ruta en Bicicleta de Montaña</h2>
+                <p>Siente la adrenalina mientras desciendes por senderos rodeados de naturaleza virgen. Este circuito de 15 kilómetros ofrece pendientes emocionantes, cruces de esteros y miradores increíbles. Es un panorama perfecto para ciclistas con experiencia básica a intermedia.</p>
+                <div class="panorama-precio">
+                    <strong>Valor referencial:</strong> $22.000 CLP
+                </div>
+                <br>
+                <a href="reserva.html" class="btn btn-destino">Reservar panorama</a>
+            </div>
+            <div class="col-md-6 order-md-1 mt-4 mt-md-0">
+                <img src="imagen/imagen-panorama2.jpg" alt="Ruta en Bicicleta" class="img-fluid panorama-img">
+            </div>
+        </article>
+
+        <!-- Panorama 3 (Texto Izquierda, Imagen Derecha) -->
+        <article class="row align-items-center mb-5 panorama-item">
+            <div class="col-md-6">
+                <h2 class="panorama-titulo">Cabalgata por el Valle</h2>
+                <p>Disfruta de la tranquilidad de la montaña a lomo de caballo, tal como lo hacen los lugareños. Un guía local te llevará por senderos ocultos y cruces de ríos, en una actividad relajante, segura y diseñada para que participe toda la familia.</p>
+                <div class="panorama-precio">
+                    <strong>Valor referencial:</strong> $35.000 CLP
+                </div>
+                <br>
+                <a href="reserva.html" class="btn btn-destino">Reservar panorama</a>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <img src="imagen/imagen-panorama3.jpg" alt="Cabalgata por el Valle" class="img-fluid panorama-img">
+            </div>
+        </article>
+
+        <!-- Panorama 4 (Imagen Izquierda, Texto Derecha) -->
+        <article class="row align-items-center mb-5 panorama-item">
+            <div class="col-md-6 order-md-2">
+                <h2 class="panorama-titulo">Tour Fotográfico Flora y Fauna</h2>
+                <p>Captura la magia del entorno natural en su estado más puro. Caminaremos a un ritmo pausado por zonas de alta biodiversidad, buscando especies de aves endémicas, árboles milenarios y paisajes únicos. Ideal para creativos y amantes de la fotografía.</p>
+                <div class="panorama-precio">
+                    <strong>Valor referencial:</strong> $12.000 CLP
+                </div>
+                <br>
+                <a href="reserva.html" class="btn btn-destino">Reservar panorama</a>
+            </div>
+            <div class="col-md-6 order-md-1 mt-4 mt-md-0">
+                <img src="imagen/imagen-panorama4.jpg" alt="Tour Fotográfico Flora y Fauna" class="img-fluid panorama-img">
+            </div>
+        </article>
+
+        <!-- Panorama 5 (Texto Izquierda, Imagen Derecha) -->
+        <article class="row align-items-center mb-5 panorama-item">
+            <div class="col-md-6">
+                <h2 class="panorama-titulo">Termas y Relajación Natural</h2>
+                <p>Deja atrás el estrés sumergiéndote en aguas termales curativas de origen volcánico. Rodeadas de un tupido bosque, estas piscinas naturales que promedian los 38°C son el panorama perfecto para descansar y recargar energías después de un día de aventura.</p>
+                <div class="panorama-precio">
+                    <strong>Valor referencial:</strong> $40.000 CLP
+                </div>
+                <br>
+                <a href="reserva.html" class="btn btn-destino">Reservar panorama</a>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <img src="imagen/imagen-panorama5.jpg" alt="Termas y Relajación Natural" class="img-fluid panorama-img">
+            </div>
+        </article>
+
+        <!-- Panorama 6 (Imagen Izquierda, Texto Derecha) -->
+        <article class="row align-items-center mb-5 panorama-item">
+            <div class="col-md-6 order-md-2">
+                <h2 class="panorama-titulo">Camping bajo las Estrellas</h2>
+                <p>Vive la experiencia definitiva de conexión total con la naturaleza. Pasaremos la noche en un campamento seguro y equipado, disfrutando de una fogata, historias locales y uno de los cielos nocturnos más despejados y estrellados del país.</p>
+                <div class="panorama-precio">
+                    <strong>Valor referencial:</strong> $28.000 CLP
+                </div>
+                <br>
+                <a href="reserva.html" class="btn btn-destino">Reservar panorama</a>
+            </div>
+            <div class="col-md-6 order-md-1 mt-4 mt-md-0">
+                <img src="imagen/imagen-panorama6.jpg" alt="Camping bajo las Estrellas" class="img-fluid panorama-img">
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<!-- Pie de página (Idéntico al index) -->
+<footer class="footer-destino">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Destino Cordillera</p>
+        <p class="mb-0">Proyecto académico - Desarrollo Web</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
