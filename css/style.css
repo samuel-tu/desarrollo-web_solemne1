@@ -172,6 +172,52 @@ body {
     margin-top: 10px;
 }
 
+/* Alojamiento y Gastronomía */
+.hero-destino {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero-destino img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-texto-destino {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--blanco);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-texto-destino h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-texto-destino p {
+    max-width: 700px;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 .fondo-reserva {
     background-image: linear-gradient(rgba(241, 248, 233, 0.85), rgba(241, 248, 233, 0.85)), url('../img/imagen-3.jpg');
     background-size: cover;

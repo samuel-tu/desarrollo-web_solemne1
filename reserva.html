@@ -53,52 +53,53 @@
 </header>
 
 <!-- Contenido principal con fondo personalizado -->
+<!-- Contenido principal con fondo temático -->
 <main class="fondo-reserva py-5">
     <div class="container">
         
         <!-- Encabezado de la página -->
         <section class="text-center mb-5">
-            <h1 class="fw-bold">Reserva tu Experiencia</h1>
+            <h1 class="fw-bold">Reserva y Contacto</h1>
             <p class="lead mx-auto" style="max-width: 650px;">
-                Planifica tu próxima escapada a la montaña. Completa el formulario para consultar disponibilidad de actividades o resolver cualquier inquietud.
+                Planifica tu próxima experiencia en la montaña. Escríbenos para consultar disponibilidad o conocer cómo llegar a nuestro centro de atención.
             </p>
         </section>
 
-        <div class="row justify-content-center">
+        <div class="row g-4">
             
-            <!-- Columna Formulario de Reserva/Contacto -->
-            <section class="col-lg-8">
-                <article class="card-destino p-4 p-md-5">
-                    <h2 class="h4 mb-4">Formulario de Solicitud</h2>
+            <!-- Columna Formulario de Reserva -->
+            <section class="col-lg-7">
+                <article class="card-destino h-100">
+                    <h2 class="h4 mb-4">Solicitud de Reserva</h2>
                     
                     <form action="#" method="post">
                         <div class="row g-3">
                             
                             <div class="col-md-6">
                                 <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Andrea Gómez" required>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
                             </div>
 
                             <div class="col-md-6">
                                 <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@correo.cl" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="contacto@ejemplo.com" required>
                             </div>
 
                             <div class="col-md-6">
-                                <label for="telefono" class="form-label fw-semibold">Teléfono de contacto</label>
+                                <label for="telefono" class="form-label fw-semibold">Teléfono</label>
                                 <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
                             </div>
 
                             <div class="col-md-6">
-                                <label for="actividad" class="form-label fw-semibold">Actividad de interés</label>
+                                <label for="actividad" class="form-label fw-semibold">Actividad / Panorama</label>
                                 <select class="form-select" id="actividad" name="actividad">
-                                    <option selected disabled value="">Selecciona un panorama...</option>
-                                    <option value="trekking">Trekking Glaciar Las Cumbres</option>
-                                    <option value="cabalgata">Cabalgata Valle Alto</option>
-                                    <option value="rafting">Rafting Río Salvaje</option>
-                                    <option value="termas">Día de Relajo en Termas Naturales</option>
-                                    <option value="astroturismo">Tour Astronómico Cordillera</option>
-                                    <option value="general">Información general / Alojamiento</option>
+                                    <option selected disabled value="">Selecciona una opción...</option>
+                                    <option value="trekking">Trekking Cordillera Alta</option>
+                                    <option value="cabalgata">Cabalgatas Guiadas</option>
+                                    <option value="rafting">Rafting Río Blanco</option>
+                                    <option value="termas">Circuito de Termas</option>
+                                    <option value="astroturismo">Tour Astronómico Nocturno</option>
+                                    <option value="alojamiento">Consulta de Alojamiento</option>
                                 </select>
                             </div>
 
@@ -109,23 +110,64 @@
 
                             <div class="col-md-6">
                                 <label for="personas" class="form-label fw-semibold">Cantidad de personas</label>
-                                <input type="number" class="form-control" id="personas" name="personas" min="1" max="25" placeholder="1">
+                                <input type="number" class="form-control" id="personas" name="personas" min="1" max="30" value="2">
                             </div>
 
                             <div class="col-12">
-                                <label for="mensaje" class="form-label fw-semibold">Consultas o requerimientos especiales</label>
-                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Indícanos si tienes requerimientos dietéticos, de equipamiento o consultas sobre rutas..."></textarea>
+                                <label for="mensaje" class="form-label fw-semibold">Comentarios o requerimientos</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Indícanos si tienes alguna duda, restricción o preferencia..."></textarea>
                             </div>
 
                             <div class="col-12 mt-4">
                                 <button type="submit" class="btn btn-destino w-100">
-                                    Enviar solicitud de reserva
+                                    Enviar solicitud
                                 </button>
                             </div>
 
                         </div>
                     </form>
                 </article>
+            </section>
+
+            <!-- Columna Información de Contacto y Ubicación -->
+            <section class="col-lg-5">
+                
+                <!-- Datos de contacto -->
+                <article class="card-destino mb-4">
+                    <h2 class="h4 mb-3">Información de Contacto</h2>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <strong>Dirección:</strong> Ruta Cordillerana Km 24, Destino Cordillera
+                        </li>
+                        <li class="mb-2">
+                            <strong>Teléfono:</strong> +56 2 2345 6789
+                        </li>
+                        <li class="mb-2">
+                            <strong>Email:</strong> contacto@destinocordillera.cl
+                        </li>
+                        <li>
+                            <strong>Horario de atención:</strong> Lun a Dom, 09:00 a 19:00 hrs
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Ubicación Referencial -->
+                <article class="card-destino">
+                    <h2 class="h4 mb-3">Ubicación Referencial</h2>
+                    <p class="small text-muted mb-3">
+                        Nos ubicamos en el valle central de la comuna, punto de partida para todas las excursiones.
+                    </p>
+                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106500.0!2d-70.5!3d-33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzAwLjAiUyA3MMKwMzAnMDAuMCJX!5e0!3m2!1ses!2scl!4v1600000000000!5m2!1ses!2scl" 
+                            title="Mapa referencial de Destino Cordillera"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </article>
+
             </section>
 
         </div>
