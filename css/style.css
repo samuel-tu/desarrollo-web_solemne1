@@ -148,7 +148,7 @@ body {
 }
 
 .panorama-item:last-child {
-    border-bottom: none; /* Quita la línea separadora al último panorama */
+    border-bottom: none;
 }
 
 .panorama-titulo {
@@ -162,7 +162,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     object-fit: cover;
     width: 100%;
-    height: 350px; /* Obliga a que todas las imágenes tengan el mismo tamaño */
+    height: 350px;
 }
 
 .panorama-precio {
