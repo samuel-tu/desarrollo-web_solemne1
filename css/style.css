@@ -140,3 +140,11 @@ body {
     font-size: 1.1rem;
     margin-top: 10px;
 }
+
+.fondo-reserva {
+    background-image: linear-gradient(rgba(241, 248, 233, 0.85), rgba(241, 248, 233, 0.85)), url('../img/imagen-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Da un efecto sutil al scrollear */
+    min-height: 80vh;
+}
